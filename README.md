@@ -12,7 +12,7 @@ A mod occasionally updated to include planned bugfixes from future versions and 
     <td style="text-align:center">> 7.3_03</td>
 </tr>
 <tr>
-    <td>Fixed memory leak when switching dimension on a server</td>
+    <td>Fixed memory leak when switching dimensions on a server</td>
     <td style="text-align:center">__</td>
 </tr>
 <tr>
