@@ -4,40 +4,22 @@
   "package": "useless.fixer.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "BlockLogicDoorMixin",
-    "BlockLogicLampMixin",
     "ChunkCoordinateMixin",
-    "EntityDispatcherMixin",
-    "EntityPaintingMixin",
-    "PacketStatisticMixin",
     "PathFinderMixin",
     "SpawnerMobsMixin",
-    "TileEntityBasketMixin",
-    "TileEntityFurnaceMixin"
+    "TileEntityRendererSignMixin"
   ],
   "client": [
-    "BlockLogicPistonBaseSteelMixin",
-    "BlockModelBasketMixin",
-    "BlockModelChestMixin",
-    "BlockModelDispatcherMixin",
     "ChunkProviderClientMixin",
     "MinecraftMixin",
     "NetworkManagerMixin",
     "PacketBlockRegionUpdateMixin",
-    "PacketHandlerClientMixin",
-    "PlayerControllerMixin",
-    "PopupScreenMixin",
-    "RenderBlocksMixin",
-    "ScreenAddServerMixin",
-    "ScreenChatMixin",
-    "ScreenFlagEditorMixin",
-    "ScreenLabelEditorMixin"
+    "PacketHandlerClientMixin"
   ],
   "injectors": {
     "defaultRequire": 1
   },
   "server": [
-    "ChunkProviderServerMixin",
-    "PacketHandlerServerMixin"
+    "ChunkProviderServerMixin"
   ]
 }

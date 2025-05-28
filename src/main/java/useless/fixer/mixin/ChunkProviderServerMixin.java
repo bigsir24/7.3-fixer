@@ -13,7 +13,11 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import useless.fixer.interfaces.ICoord;
 
 import java.util.*;
-
+/*
+Replaces the Integer map with a (supposedly) slightly more performant ChunkCoordinate map
+Replaces ChunkCoordinate instance creations on map query with a static instance
+MAY BE FIXED IN 7.4
+ */
 @Mixin(value = ChunkProviderServer.class, remap = false)
 public abstract class ChunkProviderServerMixin {
 	@Mutable

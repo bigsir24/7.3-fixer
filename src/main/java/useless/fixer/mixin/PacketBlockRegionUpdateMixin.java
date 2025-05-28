@@ -15,7 +15,10 @@ import java.io.IOException;
 import java.util.Stack;
 import java.util.zip.DataFormatException;
 import java.util.zip.Inflater;
-
+/*
+Caches chunk arrays to be reused in other packets
+UNLIKELY TO BE FIXED, DO NOT REMOVE
+ */
 @Mixin(value = PacketBlockRegionUpdate.class, remap = false)
 public abstract class PacketBlockRegionUpdateMixin implements IBuffer {
 	@Shadow

@@ -11,7 +11,10 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-
+/*
+Fixes sign transparency issues introduced in 7.3_03
+UNLIKELY TO BE FIXED, DO NOT REMOVE
+ */
 @Mixin(value = SpawnerMobs.class, remap = false)
 public abstract class SpawnerMobsMixin {
 

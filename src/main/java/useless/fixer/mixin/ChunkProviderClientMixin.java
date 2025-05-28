@@ -14,7 +14,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+/*
+Properly clears chunks when unloading, fixing a memory leak when unloadAllChunks() is called
+Replaces ChunkCoordinate instance creations on map query with a static instance
+MAY BE FIXED IN 7.4
+ */
 @Mixin(value = ChunkProviderClient.class, remap = false)
 public abstract class ChunkProviderClientMixin {
 	@Mutable

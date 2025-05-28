@@ -15,9 +15,12 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-
+/*
+Fixes creepers not being able to pathfind under trapdoors
+UNLIKELY TO BE FIXED, DO NOT REMOVE
+ */
 @Mixin(value = PathFinder.class, remap = false)
-public class PathFinderMixin {
+public abstract class PathFinderMixin {
 
 	@Final
 	@Shadow
@@ -32,8 +35,7 @@ public class PathFinderMixin {
 				boolean isTopClosedTrapdoor = !BlockLogicTrapDoor.isTrapdoorOpen(blockMetadata) && BlockLogicTrapDoor.isUpperHalf(blockMetadata);
 				if(isTopClosedTrapdoor){
 					cir.setReturnValue(1);
-					return;
-				}
+                }
 			}
 		}
 	}

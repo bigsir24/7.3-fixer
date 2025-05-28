@@ -7,7 +7,10 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import useless.fixer.interfaces.IBuffer;
-
+/*
+Caches chunk arrays to be reused in other packets
+UNLIKELY TO BE FIXED, DO NOT REMOVE
+ */
 @Mixin(value = PacketHandlerClient.class, remap = false)
 public abstract class PacketHandlerClientMixin {
 

@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "BTA Fixes",
-  "description": "This mod aims to help new BTA modders.",
+  "description": "A mod occasionally updated to include planned bugfixes from future versions and other small tweaks.",
   "authors": [
     "Turnip Labs"
   ],
@@ -28,7 +28,7 @@
 
   "depends": {
 		"minecraft": "*",
-    "fabricloader": ">=0.15.5"
+    "fabricloader": ">=0.15.6-beta"
   },
   "suggests": {
   }
